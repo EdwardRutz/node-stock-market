@@ -2,6 +2,13 @@
 
 > A demo creating a basic JavaScript full-stack app using Node.js and Express.js.
 
+## Topics
+
+- Setting up a node.js server and monitoring with nodemon
+- Templating with Handlebars
+- Working with environmental variables to hide API keys
+- Creating readable APIs
+- API calls
 
 ## Tech Stack
 
@@ -33,3 +40,5 @@
 - [Express Handlebars](https://www.npmjs.com/package/express-handlebars)
 - [Financial API, iexcloud](https://iexcloud.io/)
 - [Docs: iexcloud Stock API](https://iexcloud.io/docs/api/)
+- https://intercom.help/iexcloud/en/articles/2851957-how-to-use-the-iex-cloud-api
+- https://iexcloud.io/docs/api/#rest-how-to

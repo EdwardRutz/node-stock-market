@@ -1,2 +1,23 @@
-<h1>ACME Home Page</h1>
-<p>{{ stuff }}</p>
+
+<div class="jumbotron">
+  <h1 class="display-4">{{ stock.companyName }} ({{ stock.symbol }})</h1>
+  {{!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> --}}
+    <br/><br/>
+    <strong>Latest Stock Price: </strong>${{ stock.latestPrice }}<br/>
+    <strong>Previous Close: </strong>${{ stock.previousClose }}<br/>
+    <strong>Percent Change: </strong>${{ stock.changePercent }}<br/>
+    <strong>Market Cap: </strong>${{ stock.marketCap }}<br/>
+    <strong>YTD Change: </strong>${{ stock.ytdChange }}<br/>
+    <strong>52wk High: </strong>${{ stock.week52High }}<br/>
+    <strong>52wk Low: </strong>${{ stock.week52Low }}<br/>
+  <hr class="my-4">
+  {{!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> --}}
+</div>
+
+
+
+{{!-- Each loop in Handlebars to loop through all the key/value pairs --}}
+{{!-- Shows all the key/pair values for a stock --}}
+{{!-- {{#each stock }}
+  {{@key}} | {{this}}<br/>
+{{/each}} --}}

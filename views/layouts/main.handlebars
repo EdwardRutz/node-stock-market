@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <title>ACME</title>
+    <title>Stock Search</title>
   </head>
   <body>
     {{!-- NAVBAR --}}
@@ -26,8 +26,9 @@
         <a class="nav-link" href="about.html">About</a>
       </li>
      </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <form class="form-inline my-2 my-lg-0" action="/" method="POST">
+      <input class="form-control mr-sm-2" type="search" placeholder="Stock Symbol" 
+        aria-label="Search" name="stock_ticker">
       <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
